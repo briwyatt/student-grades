@@ -24,17 +24,21 @@ var howManyFs = [];
 // A score of 81-90 is a B
 // A score of 91-100 is an A
 
-scores.forEach(function(scores){
-	if (scores > 90) {
-	howManyAs.push(scores);
-} else if ((scores > 80) && (scores < 91)) {
-	howManyBs.push(scores);
-} else if ((scores > 70) && (scores < 81)) {
-	howManyCs.push(scores);
-} else if ((scores > 60) && (scores < 71)) {
-	howManyDs.push(scores);
-} else if ((scores > 49) && (scores < 61)) {
-	howManyFs.push(scores);
+// .forEach() method syntax from https://developer.mozilla.org 
+// arr.forEach(function callback(currentValue, index, array) {
+//     //your iterator
+// }[, thisArg]);
+scores.forEach(function(score){
+	if (score > 90) {
+	howManyAs.push(score);
+} else if ((score > 80) && (score < 91)) {
+	howManyBs.push(score);
+} else if ((score > 70) && (score < 81)) {
+	howManyCs.push(score);
+} else if ((score > 60) && (score < 71)) {
+	howManyDs.push(score);
+} else if ((score > 49) && (score < 61)) {
+	howManyFs.push(score);
 }
 });
 
